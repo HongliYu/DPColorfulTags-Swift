@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */; };
+		F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */; };
+		F7DEB1E81DEFF8B100FD3AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1E61DEFF8B100FD3AF8 /* Main.storyboard */; };
+		F7DEB1EA1DEFF8B100FD3AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1E91DEFF8B100FD3AF8 /* Assets.xcassets */; };
+		F7DEB1ED1DEFF8B100FD3AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1EB1DEFF8B100FD3AF8 /* LaunchScreen.storyboard */; };
+		F7DEB1F81DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1F71DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift */; };
+		F7DEB2031DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2021DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift */; };
+		F7DEB2171DEFF95400FD3AF8 /* DPTagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2111DEFF95400FD3AF8 /* DPTagLabel.swift */; };
+		F7DEB2181DEFF95400FD3AF8 /* DPTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */; };
+		F7DEB2191DEFF95400FD3AF8 /* DPTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */; };
+		F7DEB21A1DEFF95400FD3AF8 /* DPTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */; };
+		F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */; };
+		F7DEB21C1DEFF95400FD3AF8 /* DPTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7DEB1F41DEFF8B200FD3AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DEB1D71DEFF8B100FD3AF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DEB1DE1DEFF8B100FD3AF8;
+			remoteInfo = DPColorfulTagsDemo;
+		};
+		F7DEB1FF1DEFF8B200FD3AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DEB1D71DEFF8B100FD3AF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DEB1DE1DEFF8B100FD3AF8;
+			remoteInfo = DPColorfulTagsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7DEB1DF1DEFF8B100FD3AF8 /* DPColorfulTagsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPColorfulTagsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7DEB1E71DEFF8B100FD3AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7DEB1E91DEFF8B100FD3AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7DEB1EC1DEFF8B100FD3AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7DEB1EE1DEFF8B100FD3AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DEB1F31DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPColorfulTagsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DEB1F71DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPColorfulTagsDemoTests.swift; sourceTree = "<group>"; };
+		F7DEB1F91DEFF8B200FD3AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DEB1FE1DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPColorfulTagsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DEB2021DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPColorfulTagsDemoUITests.swift; sourceTree = "<group>"; };
+		F7DEB2041DEFF8B200FD3AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DEB2111DEFF95400FD3AF8 /* DPTagLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagLabel.swift; sourceTree = "<group>"; };
+		F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagModel.swift; sourceTree = "<group>"; };
+		F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagsViewModel.swift; sourceTree = "<group>"; };
+		F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagTableViewCell.swift; sourceTree = "<group>"; };
+		F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagView.swift; sourceTree = "<group>"; };
+		F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTagTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7DEB1DC1DEFF8B100FD3AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DEB1F01DEFF8B200FD3AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DEB1FB1DEFF8B200FD3AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7DEB1D61DEFF8B100FD3AF8 = {
+			isa = PBXGroup;
+			children = (
+				F7DEB1E11DEFF8B100FD3AF8 /* DPColorfulTagsDemo */,
+				F7DEB1F61DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests */,
+				F7DEB2011DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests */,
+				F7DEB1E01DEFF8B100FD3AF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7DEB1E01DEFF8B100FD3AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEB1DF1DEFF8B100FD3AF8 /* DPColorfulTagsDemo.app */,
+				F7DEB1F31DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.xctest */,
+				F7DEB1FE1DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7DEB1E11DEFF8B100FD3AF8 /* DPColorfulTagsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */,
+				F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */,
+				F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */,
+				F7DEB1E61DEFF8B100FD3AF8 /* Main.storyboard */,
+				F7DEB1E91DEFF8B100FD3AF8 /* Assets.xcassets */,
+				F7DEB1EB1DEFF8B100FD3AF8 /* LaunchScreen.storyboard */,
+				F7DEB1EE1DEFF8B100FD3AF8 /* Info.plist */,
+			);
+			path = DPColorfulTagsDemo;
+			sourceTree = "<group>";
+		};
+		F7DEB1F61DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEB1F71DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift */,
+				F7DEB1F91DEFF8B200FD3AF8 /* Info.plist */,
+			);
+			path = DPColorfulTagsDemoTests;
+			sourceTree = "<group>";
+		};
+		F7DEB2011DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEB2021DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift */,
+				F7DEB2041DEFF8B200FD3AF8 /* Info.plist */,
+			);
+			path = DPColorfulTagsDemoUITests;
+			sourceTree = "<group>";
+		};
+		F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */,
+				F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */,
+				F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */,
+				F7DEB2111DEFF95400FD3AF8 /* DPTagLabel.swift */,
+				F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */,
+				F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */,
+			);
+			path = DPColorfulTags;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7DEB1DE1DEFF8B100FD3AF8 /* DPColorfulTagsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DEB2071DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemo" */;
+			buildPhases = (
+				F7DEB1DB1DEFF8B100FD3AF8 /* Sources */,
+				F7DEB1DC1DEFF8B100FD3AF8 /* Frameworks */,
+				F7DEB1DD1DEFF8B100FD3AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DPColorfulTagsDemo;
+			productName = DPColorfulTagsDemo;
+			productReference = F7DEB1DF1DEFF8B100FD3AF8 /* DPColorfulTagsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7DEB1F21DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DEB20A1DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemoTests" */;
+			buildPhases = (
+				F7DEB1EF1DEFF8B200FD3AF8 /* Sources */,
+				F7DEB1F01DEFF8B200FD3AF8 /* Frameworks */,
+				F7DEB1F11DEFF8B200FD3AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7DEB1F51DEFF8B200FD3AF8 /* PBXTargetDependency */,
+			);
+			name = DPColorfulTagsDemoTests;
+			productName = DPColorfulTagsDemoTests;
+			productReference = F7DEB1F31DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7DEB1FD1DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DEB20D1DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemoUITests" */;
+			buildPhases = (
+				F7DEB1FA1DEFF8B200FD3AF8 /* Sources */,
+				F7DEB1FB1DEFF8B200FD3AF8 /* Frameworks */,
+				F7DEB1FC1DEFF8B200FD3AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7DEB2001DEFF8B200FD3AF8 /* PBXTargetDependency */,
+			);
+			name = DPColorfulTagsDemoUITests;
+			productName = DPColorfulTagsDemoUITests;
+			productReference = F7DEB1FE1DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7DEB1D71DEFF8B100FD3AF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Hongli Yu";
+				TargetAttributes = {
+					F7DEB1DE1DEFF8B100FD3AF8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FC9QT6TC28;
+						ProvisioningStyle = Automatic;
+					};
+					F7DEB1F21DEFF8B200FD3AF8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FC9QT6TC28;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F7DEB1DE1DEFF8B100FD3AF8;
+					};
+					F7DEB1FD1DEFF8B200FD3AF8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FC9QT6TC28;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F7DEB1DE1DEFF8B100FD3AF8;
+					};
+				};
+			};
+			buildConfigurationList = F7DEB1DA1DEFF8B100FD3AF8 /* Build configuration list for PBXProject "DPColorfulTagsDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7DEB1D61DEFF8B100FD3AF8;
+			productRefGroup = F7DEB1E01DEFF8B100FD3AF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7DEB1DE1DEFF8B100FD3AF8 /* DPColorfulTagsDemo */,
+				F7DEB1F21DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests */,
+				F7DEB1FD1DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7DEB1DD1DEFF8B100FD3AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DEB1ED1DEFF8B100FD3AF8 /* LaunchScreen.storyboard in Resources */,
+				F7DEB1EA1DEFF8B100FD3AF8 /* Assets.xcassets in Resources */,
+				F7DEB21C1DEFF95400FD3AF8 /* DPTagTableViewCell.xib in Resources */,
+				F7DEB1E81DEFF8B100FD3AF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DEB1F11DEFF8B200FD3AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DEB1FC1DEFF8B200FD3AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7DEB1DB1DEFF8B100FD3AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DEB21A1DEFF95400FD3AF8 /* DPTagTableViewCell.swift in Sources */,
+				F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */,
+				F7DEB2191DEFF95400FD3AF8 /* DPTagsViewModel.swift in Sources */,
+				F7DEB2181DEFF95400FD3AF8 /* DPTagModel.swift in Sources */,
+				F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */,
+				F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */,
+				F7DEB2171DEFF95400FD3AF8 /* DPTagLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DEB1EF1DEFF8B200FD3AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DEB1F81DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DEB1FA1DEFF8B200FD3AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DEB2031DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7DEB1F51DEFF8B200FD3AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DEB1DE1DEFF8B100FD3AF8 /* DPColorfulTagsDemo */;
+			targetProxy = F7DEB1F41DEFF8B200FD3AF8 /* PBXContainerItemProxy */;
+		};
+		F7DEB2001DEFF8B200FD3AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DEB1DE1DEFF8B100FD3AF8 /* DPColorfulTagsDemo */;
+			targetProxy = F7DEB1FF1DEFF8B200FD3AF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7DEB1E61DEFF8B100FD3AF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7DEB1E71DEFF8B100FD3AF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7DEB1EB1DEFF8B100FD3AF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7DEB1EC1DEFF8B100FD3AF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7DEB2051DEFF8B200FD3AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7DEB2061DEFF8B200FD3AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7DEB2081DEFF8B200FD3AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FC9QT6TC28;
+				INFOPLIST_FILE = DPColorfulTagsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		F7DEB2091DEFF8B200FD3AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FC9QT6TC28;
+				INFOPLIST_FILE = DPColorfulTagsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		F7DEB20B1DEFF8B200FD3AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FC9QT6TC28;
+				INFOPLIST_FILE = DPColorfulTagsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DPColorfulTagsDemo.app/DPColorfulTagsDemo";
+			};
+			name = Debug;
+		};
+		F7DEB20C1DEFF8B200FD3AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FC9QT6TC28;
+				INFOPLIST_FILE = DPColorfulTagsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DPColorfulTagsDemo.app/DPColorfulTagsDemo";
+			};
+			name = Release;
+		};
+		F7DEB20E1DEFF8B200FD3AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FC9QT6TC28;
+				INFOPLIST_FILE = DPColorfulTagsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DPColorfulTagsDemo;
+			};
+			name = Debug;
+		};
+		F7DEB20F1DEFF8B200FD3AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FC9QT6TC28;
+				INFOPLIST_FILE = DPColorfulTagsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DPColorfulTagsDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7DEB1DA1DEFF8B100FD3AF8 /* Build configuration list for PBXProject "DPColorfulTagsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DEB2051DEFF8B200FD3AF8 /* Debug */,
+				F7DEB2061DEFF8B200FD3AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DEB2071DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DEB2081DEFF8B200FD3AF8 /* Debug */,
+				F7DEB2091DEFF8B200FD3AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7DEB20A1DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DEB20B1DEFF8B200FD3AF8 /* Debug */,
+				F7DEB20C1DEFF8B200FD3AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7DEB20D1DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DEB20E1DEFF8B200FD3AF8 /* Debug */,
+				F7DEB20F1DEFF8B200FD3AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7DEB1D71DEFF8B100FD3AF8 /* Project object */;
+}
