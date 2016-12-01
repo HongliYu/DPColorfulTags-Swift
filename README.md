@@ -4,8 +4,7 @@ tags with different colors in UITableview
 [![Cocoapods](https://img.shields.io/cocoapods/v/DPColorfulTags.svg)](http://cocoapods.org/?q=DPColorfulTags)
 [![Pod License](http://img.shields.io/cocoapods/l/DPColorfulTags.svg)](https://github.com/HongliYu/DPColorfulTags-Swift/blob/master/LICENSE)
 
-![screenshot](https://github.com/HongliYu/DPColorfulTags-Swift/blob/master/DPColorfulTags.png?raw=true)
-
+<img src="https://github.com/HongliYu/DPColorfulTags-Swift/blob/master/DPColorfulTags.png?raw=true" alt="alt text"  height="400">
 
 # Usage
 
