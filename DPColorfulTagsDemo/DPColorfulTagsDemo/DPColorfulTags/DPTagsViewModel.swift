@@ -13,10 +13,6 @@ class DPTagsViewModel {
     var sectionTitle: String?
     var tagModels: [DPTagModel]?
     
-    init() {
-        
-    }
-    
     init(sectionTitle: String, tagModels: [DPTagModel]) {
         self.sectionTitle = sectionTitle
         self.tagModels = tagModels

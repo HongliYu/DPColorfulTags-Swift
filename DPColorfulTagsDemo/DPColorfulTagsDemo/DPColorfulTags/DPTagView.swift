@@ -13,7 +13,7 @@ class DPTagView: UIView {
     
     lazy var label = { () -> UILabel in
         let label = UILabel()
-        label.textColor = UIColor.whiteColor()
+        label.textColor = UIColor.white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -34,40 +34,40 @@ class DPTagView: UIView {
     }
     
     // MARK: Basic UI
-    private func setupViews() {
-        self.backgroundColor = UIColor.whiteColor()
+    fileprivate func setupViews() {
+        self.backgroundColor = UIColor.white
         self.addSubview(self.label)
         self.setupConstraints()
     }
     
-    private func setupConstraints() {
+    fileprivate func setupConstraints() {
         var constraints = [NSLayoutConstraint]()
-        constraints.appendContentsOf(NSLayoutConstraint.constraintsWithVisualFormat("H:|-4.0-[label]-4.0-|",
-            options: .AlignAllTrailing,
+        constraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "H:|-4.0-[label]-4.0-|",
+            options: .alignAllTrailing,
             metrics: nil,
             views:  ["label" : self.label]))
         constraints.append(NSLayoutConstraint(item: self.label,
-            attribute: .Height,
-            relatedBy: .GreaterThanOrEqual,
+            attribute: .height,
+            relatedBy: .greaterThanOrEqual,
             toItem: nil,
-            attribute: .Height,
+            attribute: .height,
             multiplier: 1,
             constant: 24))
         constraints.append(NSLayoutConstraint(item: self.label,
-            attribute: .Top,
-            relatedBy: .Equal,
+            attribute: .top,
+            relatedBy: .equal,
             toItem: self,
-            attribute: .Top,
+            attribute: .top,
             multiplier: 1,
             constant: 3))
         constraints.append(NSLayoutConstraint(item: self,
-            attribute: .Bottom,
-            relatedBy: .Equal,
+            attribute: .bottom,
+            relatedBy: .equal,
             toItem: self.label,
-            attribute: .Bottom,
+            attribute: .bottom,
             multiplier: 1,
             constant: 3))
-        NSLayoutConstraint.activateConstraints(constraints)
+        NSLayoutConstraint.activate(constraints)
     }
     
     func image() -> UIImage? {
@@ -75,7 +75,7 @@ class DPTagView: UIView {
         guard let context = UIGraphicsGetCurrentContext() else {
             return nil
         }
-        self.layer.renderInContext(context)
+        self.layer.render(in: context)
         guard let image = UIGraphicsGetImageFromCurrentImageContext() else {
             return nil
         }

@@ -12,20 +12,19 @@ import UIKit
 class DPTagTableViewCell : UITableViewCell {
     
     @IBOutlet weak var label: DPTagLabel!
-    private var tagsViewModel: DPTagsViewModel?
+    fileprivate var tagsViewModel: DPTagsViewModel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    func bindData(tagsViewModel: DPTagsViewModel) {
+    func bindData(_ tagsViewModel: DPTagsViewModel) {
         self.tagsViewModel = tagsViewModel
         if tagsViewModel.tagModels == nil { return }
-        self.label.enableSelectMode = false
         self.label.setTagModels(tagsViewModel.tagModels!)
     }
     

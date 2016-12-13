@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7B2C3281DFFFD8E00944199 /* DPExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */; };
 		F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */; };
 		F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */; };
 		F7DEB1E81DEFF8B100FD3AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1E61DEFF8B100FD3AF8 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPExtentions.swift; sourceTree = "<group>"; };
 		F7DEB1DF1DEFF8B100FD3AF8 /* DPColorfulTagsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPColorfulTagsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */ = {
 			isa = PBXGroup;
 			children = (
+				F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */,
 				F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */,
 				F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */,
 				F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */,
@@ -220,17 +223,20 @@
 					F7DEB1DE1DEFF8B100FD3AF8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = FC9QT6TC28;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					F7DEB1F21DEFF8B200FD3AF8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = FC9QT6TC28;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F7DEB1DE1DEFF8B100FD3AF8;
 					};
 					F7DEB1FD1DEFF8B200FD3AF8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = FC9QT6TC28;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F7DEB1DE1DEFF8B100FD3AF8;
 					};
@@ -293,6 +299,7 @@
 				F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */,
 				F7DEB2191DEFF95400FD3AF8 /* DPTagsViewModel.swift in Sources */,
 				F7DEB2181DEFF95400FD3AF8 /* DPTagModel.swift in Sources */,
+				F7B2C3281DFFFD8E00944199 /* DPExtentions.swift in Sources */,
 				F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */,
 				F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */,
 				F7DEB2171DEFF95400FD3AF8 /* DPTagLabel.swift in Sources */,
@@ -450,7 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -463,7 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -544,6 +551,7 @@
 				F7DEB2091DEFF8B200FD3AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7DEB20A1DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +560,7 @@
 				F7DEB20C1DEFF8B200FD3AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7DEB20D1DEFF8B200FD3AF8 /* Build configuration list for PBXNativeTarget "DPColorfulTagsDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +569,7 @@
 				F7DEB20F1DEFF8B200FD3AF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

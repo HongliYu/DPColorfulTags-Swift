@@ -12,7 +12,6 @@ import UIKit
 class DPTagLabel: UILabel {
     
     var tagModels: [DPTagModel]?
-    var enableSelectMode: Bool = false
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -30,22 +29,20 @@ class DPTagLabel: UILabel {
         self.setupGesture()
     }
     
-    private func setup() {
+    fileprivate func setup() {
         self.numberOfLines = 0
-        self.lineBreakMode = .ByWordWrapping
-        self.textAlignment = .Left
-        self.backgroundColor = UIColor.whiteColor()
-        self.userInteractionEnabled = true
+        self.lineBreakMode = .byWordWrapping
+        self.textAlignment = .left
+        self.backgroundColor = UIColor.white
+        self.isUserInteractionEnabled = true
     }
     
-    private func setupGesture() {
-        if self.enableSelectMode  {
-            let recognizer = UITapGestureRecognizer(target: self, action: #selector(DPTagLabel.tapAction(_:)))
-            self.addGestureRecognizer(recognizer)
-        }
+    fileprivate func setupGesture() {
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(DPTagLabel.tapAction(_:)))
+        self.addGestureRecognizer(recognizer)
     }
         
-    @objc private func tapAction(recognizer: UITapGestureRecognizer) {
+    @objc fileprivate func tapAction(_ recognizer: UITapGestureRecognizer) {
         guard let label = recognizer.view as? UILabel else {
             return
         }
@@ -63,9 +60,9 @@ class DPTagLabel: UILabel {
         let storage = NSTextStorage(attributedString: attributedText)
         storage.addLayoutManager(manager)
         
-        let touchPoint = recognizer.locationInView(label)
-        let indexOfCharacter = manager.characterIndexForPoint(touchPoint,
-                                                              inTextContainer: container,
+        let touchPoint = recognizer.location(in: label)
+        let indexOfCharacter = manager.characterIndex(for: touchPoint,
+                                                              in: container,
                                                               fractionOfDistanceBetweenInsertionPoints: nil)
         guard var tags = self.tagModels else {
             return
@@ -76,7 +73,7 @@ class DPTagLabel: UILabel {
         self.setTagModels(tags)
     }
     
-    func setTagModels(tagModels: [DPTagModel]) {
+    func setTagModels(_ tagModels: [DPTagModel]) {
         self.tagModels = tagModels
         
         let mutableString = NSMutableAttributedString()
@@ -86,7 +83,7 @@ class DPTagLabel: UILabel {
             let view = DPTagView()
             view.label.attributedText = tag.attributedTitle()
             view.label.backgroundColor = tag.selected ? tag.heightedColor : tag.color
-            let size = view.systemLayoutSizeFittingSize(view.frame.size,
+            let size = view.systemLayoutSizeFitting(view.frame.size,
                                                         withHorizontalFittingPriority: UILayoutPriorityFittingSizeLevel,
                                                         verticalFittingPriority: UILayoutPriorityFittingSizeLevel)
             view.frame = CGRect(x: 0, y: 0, width: size.width + 20, height: size.height)
@@ -98,7 +95,7 @@ class DPTagLabel: UILabel {
             
             let attrString = NSAttributedString(attachment: attachment)
             mutableString.beginEditing()
-            mutableString.appendAttributedString(attrString)
+            mutableString.append(attrString)
             mutableString.endEditing()
         }
         
