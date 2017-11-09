@@ -6,26 +6,25 @@
 //  Copyright © 2016 Hongli Yu. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
+let kDPTagTableViewCellReuseID = "DPTagTableViewCell"
+
 class DPTagTableViewCell : UITableViewCell {
-    
-    @IBOutlet weak var label: DPTagLabel!
-    fileprivate var tagsViewModel: DPTagsViewModel?
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+  
+  @IBOutlet weak var tagLabel: DPTagLabel!
+  fileprivate var tagsViewModel: DPTagsViewModel?
+  var tapActionCallBack:((_ tagModel: DPTagModel)->Void)?
+
+  func bindData(_ tagsViewModel: DPTagsViewModel) {
+    self.tagsViewModel = tagsViewModel
+    guard let tagModels = tagsViewModel.tagModels else { return }
+    self.tagLabel.setTagModels(tagModels)
+    self.tagLabel.tapActionCallBack = {
+      [weak self] tagModel in
+      guard let strongSelf = self else { return }
+      strongSelf.tapActionCallBack?(tagModel)
     }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    func bindData(_ tagsViewModel: DPTagsViewModel) {
-        self.tagsViewModel = tagsViewModel
-        if tagsViewModel.tagModels == nil { return }
-        self.label.setTagModels(tagsViewModel.tagModels!)
-    }
-    
+  }
+  
 }

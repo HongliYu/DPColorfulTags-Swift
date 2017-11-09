@@ -9,13 +9,13 @@
 import Foundation
 
 class DPTagsViewModel {
-    
-    var sectionTitle: String?
-    var tagModels: [DPTagModel]?
-    
-    init(sectionTitle: String, tagModels: [DPTagModel]) {
-        self.sectionTitle = sectionTitle
-        self.tagModels = tagModels
-    }
-    
+  
+  var sectionTitle: String?
+  var tagModels: [DPTagModel]?
+  
+  init(sectionTitle: String, tagModels: [DPTagModel]) {
+    self.sectionTitle = sectionTitle
+    self.tagModels = tagModels
+  }
+  
 }
