@@ -30,6 +30,7 @@ extension UIColor {
   }
   
 }
+
 extension UIViewController {
   
   func alert(_ title: String, message: String? = nil) {

@@ -21,6 +21,10 @@
 		F7DEB21A1DEFF95400FD3AF8 /* DPTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */; };
 		F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */; };
 		F7DEB21C1DEFF95400FD3AF8 /* DPTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */; };
+		F7F5E3CA1FB7341800636DF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7F5E3CC1FB7341800636DF4 /* InfoPlist.strings */; };
+		F7F5E3D01FB7349100636DF4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7F5E3D21FB7349100636DF4 /* Localizable.strings */; };
+		F7F5E4181FB77DB000636DF4 /* DPAppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5E4161FB77DB000636DF4 /* DPAppLanguage.swift */; };
+		F7F5E4191FB77DB000636DF4 /* DPLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5E4171FB77DB000636DF4 /* DPLanguageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,18 @@
 		F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagTableViewCell.swift; sourceTree = "<group>"; };
 		F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagView.swift; sourceTree = "<group>"; };
 		F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTagTableViewCell.xib; sourceTree = "<group>"; };
+		F7F5E3C61FB7333100636DF4 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Main.strings; sourceTree = "<group>"; };
+		F7F5E3C71FB7333100636DF4 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F7F5E3CB1FB7341800636DF4 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7F5E3CD1FB7342800636DF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7F5E3D11FB7349100636DF4 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7F5E3D31FB7349500636DF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7F5E40E1FB75E1A00636DF4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		F7F5E40F1FB75E1A00636DF4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F7F5E4101FB75E1A00636DF4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7F5E4111FB75E1A00636DF4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7F5E4161FB77DB000636DF4 /* DPAppLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPAppLanguage.swift; sourceTree = "<group>"; };
+		F7F5E4171FB77DB000636DF4 /* DPLanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPLanguageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +134,8 @@
 				F7DEB1E91DEFF8B100FD3AF8 /* Assets.xcassets */,
 				F7DEB1EB1DEFF8B100FD3AF8 /* LaunchScreen.storyboard */,
 				F7DEB1EE1DEFF8B100FD3AF8 /* Info.plist */,
+				F7F5E3CC1FB7341800636DF4 /* InfoPlist.strings */,
+				F7F5E3D21FB7349100636DF4 /* Localizable.strings */,
 			);
 			path = DPColorfulTagsDemo;
 			sourceTree = "<group>";
@@ -143,6 +161,8 @@
 		F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */ = {
 			isa = PBXGroup;
 			children = (
+				F7F5E4161FB77DB000636DF4 /* DPAppLanguage.swift */,
+				F7F5E4171FB77DB000636DF4 /* DPLanguageManager.swift */,
 				F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */,
 				F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */,
 				F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */,
@@ -249,6 +269,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = F7DEB1D61DEFF8B100FD3AF8;
 			productRefGroup = F7DEB1E01DEFF8B100FD3AF8 /* Products */;
@@ -268,9 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7DEB1ED1DEFF8B100FD3AF8 /* LaunchScreen.storyboard in Resources */,
+				F7F5E3D01FB7349100636DF4 /* Localizable.strings in Resources */,
 				F7DEB1EA1DEFF8B100FD3AF8 /* Assets.xcassets in Resources */,
 				F7DEB21C1DEFF95400FD3AF8 /* DPTagTableViewCell.xib in Resources */,
 				F7DEB1E81DEFF8B100FD3AF8 /* Main.storyboard in Resources */,
+				F7F5E3CA1FB7341800636DF4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +324,8 @@
 				F7DEB2181DEFF95400FD3AF8 /* DPTagModel.swift in Sources */,
 				F7B2C3281DFFFD8E00944199 /* DPExtentions.swift in Sources */,
 				F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */,
+				F7F5E4181FB77DB000636DF4 /* DPAppLanguage.swift in Sources */,
+				F7F5E4191FB77DB000636DF4 /* DPLanguageManager.swift in Sources */,
 				F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */,
 				F7DEB2171DEFF95400FD3AF8 /* DPTagLabel.swift in Sources */,
 			);
@@ -342,6 +367,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F7DEB1E71DEFF8B100FD3AF8 /* Base */,
+				F7F5E3C61FB7333100636DF4 /* fa */,
+				F7F5E40E1FB75E1A00636DF4 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -350,8 +377,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				F7DEB1EC1DEFF8B100FD3AF8 /* Base */,
+				F7F5E3C71FB7333100636DF4 /* fa */,
+				F7F5E40F1FB75E1A00636DF4 /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F7F5E3CC1FB7341800636DF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7F5E3CB1FB7341800636DF4 /* fa */,
+				F7F5E3CD1FB7342800636DF4 /* en */,
+				F7F5E4101FB75E1A00636DF4 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F7F5E3D21FB7349100636DF4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7F5E3D11FB7349100636DF4 /* fa */,
+				F7F5E3D31FB7349500636DF4 /* en */,
+				F7F5E4111FB75E1A00636DF4 /* de */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -361,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -417,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

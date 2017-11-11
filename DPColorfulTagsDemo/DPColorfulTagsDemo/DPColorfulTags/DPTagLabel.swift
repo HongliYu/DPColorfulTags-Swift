@@ -66,7 +66,6 @@ class DPTagLabel: UILabel {
     tagModels[indexOfCharacter] = tagModel
     self.setTagModels(tagModels)
     self.tapActionCallBack?(tagModel)
-    // TODO: add tap action call back
   }
   
   func setTagModels(_ tagModels: [DPTagModel]) {
@@ -77,23 +76,34 @@ class DPTagLabel: UILabel {
     
     for tagModel in tagModels {
       let view = DPTagView()
-      view.label.attributedText = tagModel.attributedTitle()
+      // MARK: Persian bug in UILabel attributedText by Apple
+      if DPLanguageManager.shared.current.nameEnglish == "Persian" {
+        view.label.text = " " + tagModel.attributedTitle().string + " "
+        view.label.font = UIFont.boldSystemFont(ofSize: 14)
+      } else {
+        view.label.attributedText = tagModel.attributedTitle()
+      }
+      
       view.label.backgroundColor = tagModel.selected ? tagModel.heightedColor : tagModel.color
       let size = view.systemLayoutSizeFitting(view.frame.size,
                                               withHorizontalFittingPriority: UILayoutPriority.fittingSizeLevel,
                                               verticalFittingPriority: UILayoutPriority.fittingSizeLevel)
-      if #available(iOS 11, *) {
-        view.frame = CGRect(x: 0, y: 0, width: size.width + 8, height: size.height)
+      // MARK: Persian bug in UILabel attributedText by Apple
+      if DPLanguageManager.shared.current.nameEnglish == "Persian" {
+        view.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
       } else {
-        view.frame = CGRect(x: 0, y: 0, width: size.width + 20, height: size.height)
+        if #available(iOS 11, *) {
+          view.frame = CGRect(x: 0, y: 0, width: size.width + 8, height: size.height)
+        } else {
+          view.frame = CGRect(x: 0, y: 0, width: size.width + 20, height: size.height)
+        }
       }
 
       cell.contentView.addSubview(view)
-      
       let image = view.image()
+      
       let attachment = NSTextAttachment()
       attachment.image = image
-      
       let attrString = NSAttributedString(attachment: attachment)
       mutableString.beginEditing()
       mutableString.append(attrString)
@@ -108,4 +118,13 @@ class DPTagLabel: UILabel {
     self.attributedText = mutableString
   }
   
+  func labelImageSnapshot(label: UILabel) -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(label.frame.size, false, 0)
+    guard let context = UIGraphicsGetCurrentContext() else { return nil }
+    label.layer.render(in: context)
+    guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+    UIGraphicsEndImageContext()
+    return image
+  }
+
 }
