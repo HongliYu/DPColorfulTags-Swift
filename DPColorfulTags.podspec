@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DPColorfulTags"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "colorful tags"
 
   s.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/HongliYu/DPColorfulTags-Swift"
   s.license      = "MIT"
   s.author       = { "HongliYu" => "yhlssdone@gmail.com" }
-  s.source       = { :git => "https://github.com/HongliYu/DPColorfulTags-Swift.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/HongliYu/DPColorfulTags-Swift.git", :tag => "0.0.4" }
 
   s.platform     = :ios, "9.0"
   s.requires_arc = true
