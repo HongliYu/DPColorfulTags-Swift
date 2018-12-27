@@ -10,9 +10,11 @@ import UIKit
 
 class DPTagModel {
   
-  fileprivate(set) var title: String?
-  fileprivate(set) var heightedColor: UIColor?
-  fileprivate(set) var color: UIColor?
+  private(set) var title: String?
+  private(set) var heightedColor: UIColor?
+  private(set) var color: UIColor?
+  private(set) var fontSize: CGFloat = 14
+
   var selected: Bool = false
   
   init(dictionary: [String : Any]) {
@@ -22,6 +24,9 @@ class DPTagModel {
     self.selected = (dictionary["selected"] as? String ?? "") == "1"
     let heightedColorHex = dictionary["heighted_color"] as? String ?? ""
     self.heightedColor = UIColor.hexStringToUIColor(heightedColorHex)
+    let fontSize = dictionary["font_size"] as? String ?? ""
+    let size = NumberFormatter().number(from: fontSize) ?? 0
+    self.fontSize = CGFloat(truncating: size)
   }
   
   func attributedTitle() -> NSAttributedString {
@@ -31,16 +36,14 @@ class DPTagModel {
     paragraphStyle.headIndent = 10
     paragraphStyle.tailIndent = 10
     let attributes = [
-      NSAttributedStringKey.paragraphStyle : paragraphStyle,
-      NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)
+      NSAttributedString.Key.paragraphStyle : paragraphStyle,
+      NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: fontSize)
     ]
-    return NSAttributedString(string: self.title ?? "",
-                              attributes: attributes)
+    return NSAttributedString(string: title ?? "", attributes: attributes)
   }
   
 }
 
-// MARK: - CustomStringConvertible
 extension DPTagModel: CustomStringConvertible {
   
   public var description : String {

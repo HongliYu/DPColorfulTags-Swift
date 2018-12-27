@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,31 +36,44 @@
                                 </constraints>
                                 <state key="normal" title="Persian"/>
                                 <connections>
-                                    <action selector="PersianAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbm-JW-fq9"/>
+                                    <action selector="persianAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cev-2W-MHv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qov-13-ZX2">
-                                <rect key="frame" x="75" y="28" width="55" height="44"/>
+                                <rect key="frame" x="83" y="28" width="55" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="JKq-m2-Any"/>
                                 </constraints>
                                 <state key="normal" title="German"/>
                                 <connections>
-                                    <action selector="GermanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5t-Gm-AGM"/>
+                                    <action selector="germanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAv-EF-MdD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-cg-aOd">
+                                <rect key="frame" x="154" y="28" width="50" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="owt-Bz-W10"/>
+                                </constraints>
+                                <state key="normal" title="English"/>
+                                <connections>
+                                    <action selector="englishAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ito-9F-inD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xjr-ns-fhg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9XF-71-k4T"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qov-13-ZX2" secondAttribute="trailing" constant="20" symbolic="YES" id="Few-AA-bmT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xjr-ns-fhg" secondAttribute="bottom" id="Fs7-hG-WTk"/>
-                            <constraint firstItem="Qov-13-ZX2" firstAttribute="leading" secondItem="YjQ-pb-Wfe" secondAttribute="trailing" constant="8" id="HZi-fI-TiT"/>
                             <constraint firstAttribute="trailing" secondItem="Xjr-ns-fhg" secondAttribute="trailing" id="Ilp-Q9-nFR"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YjQ-pb-Wfe" secondAttribute="trailing" constant="20" symbolic="YES" id="P8m-oD-Zgc"/>
+                            <constraint firstItem="Xjr-ns-fhg" firstAttribute="top" secondItem="YjQ-pb-Wfe" secondAttribute="bottom" id="K8N-LH-lAt"/>
+                            <constraint firstItem="Qov-13-ZX2" firstAttribute="leading" secondItem="YjQ-pb-Wfe" secondAttribute="trailing" constant="16" id="OTl-N6-Jbj"/>
                             <constraint firstItem="YjQ-pb-Wfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="TRZ-vO-Z1f"/>
+                            <constraint firstItem="Qov-13-ZX2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UtZ-4l-xoo"/>
+                            <constraint firstItem="2Mf-cg-aOd" firstAttribute="leading" secondItem="Qov-13-ZX2" secondAttribute="trailing" constant="16" id="WWr-Qq-wJh"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Mf-cg-aOd" secondAttribute="trailing" constant="20" symbolic="YES" id="eae-ZF-IVn"/>
+                            <constraint firstItem="2Mf-cg-aOd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nAj-Ij-eYe"/>
                             <constraint firstItem="Qov-13-ZX2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="omu-4d-zmi"/>
-                            <constraint firstItem="Xjr-ns-fhg" firstAttribute="top" secondItem="YjQ-pb-Wfe" secondAttribute="bottom" id="ouC-oP-CE1"/>
+                            <constraint firstItem="Qov-13-ZX2" firstAttribute="leading" secondItem="YjQ-pb-Wfe" secondAttribute="trailing" constant="16" id="s9h-dX-Ipc"/>
                             <constraint firstItem="YjQ-pb-Wfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xIO-xf-rJ7"/>
                         </constraints>
                     </view>

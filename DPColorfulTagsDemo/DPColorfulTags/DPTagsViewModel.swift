@@ -6,16 +6,16 @@
 //  Copyright © 2016 Hongli Yu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class DPTagsViewModel {
   
-  var sectionTitle: String?
+  var languageEnglishName: String = "English"
   var tagModels: [DPTagModel]?
   
-  init(sectionTitle: String, tagModels: [DPTagModel]) {
-    self.sectionTitle = sectionTitle
+  init(tagModels: [DPTagModel], languageEnglishName: String = "English") {
     self.tagModels = tagModels
+    self.languageEnglishName = languageEnglishName
   }
   
 }
