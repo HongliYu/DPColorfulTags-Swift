@@ -8,14 +8,14 @@
 
 import UIKit
 
-class DPTagsViewModel {
-  
-  var languageEnglishName: String = "English"
-  var tagModels: [DPTagModel]?
-  
-  init(tagModels: [DPTagModel], languageEnglishName: String = "English") {
-    self.tagModels = tagModels
-    self.languageEnglishName = languageEnglishName
-  }
-  
+public class DPTagsViewModel {
+    
+    var languageEnglishName: String = "English"
+    var tagModels: [DPTagModel]?
+    
+    public init(tagModels: [DPTagModel], languageEnglishName: String = "English") {
+        self.tagModels = tagModels
+        self.languageEnglishName = languageEnglishName
+    }
+    
 }
