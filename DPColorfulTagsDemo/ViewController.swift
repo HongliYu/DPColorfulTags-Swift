@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
   // MARK: - UI
   func basicUI() {
-    mainTableView.registerCell([DPTagTableViewCell.self])
+    DPTagTableViewCell.registerBy(mainTableView)
   }
   
   func addNotifications() {

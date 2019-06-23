@@ -109,4 +109,11 @@ public class DPTagTableViewCell : UITableViewCell {
         tapActionCallBack?(tagModel)
     }
     
+    public static func registerBy(_ tableView: UITableView) {
+        let bundle = Bundle(for: self.classForCoder())
+        tableView.register(UINib(nibName: "DPTagTableViewCell", bundle: bundle),
+                           forCellReuseIdentifier: "DPTagTableViewCell")
+    }
+    
+
 }

@@ -20,5 +20,11 @@ class DPTagView: UIView {
         UIGraphicsEndImageContext()
         return image
     }
-    
+
+    static func loadFromNib() -> DPTagView {
+        let bundle = Bundle(for: self.classForCoder())
+        let nib = UINib(nibName: "DPTagView", bundle: bundle)
+        return nib.instantiate(withOwner: self, options: nil).first as! DPTagView
+    }
+
 }

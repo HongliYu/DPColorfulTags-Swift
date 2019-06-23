@@ -44,23 +44,6 @@ public extension UIViewController {
     
 }
 
-public extension UITableView {
-    
-    func registerCell(_ cellTypes:[AnyClass]) {
-        for cellType in cellTypes {
-            let typeString = String(describing: cellType)
-            let xibPath = Bundle(for: cellType).path(forResource: typeString, ofType: "nib")
-            if xibPath == nil {
-                register(cellType, forCellReuseIdentifier: typeString)
-            } else {
-                register(UINib(nibName: typeString, bundle: Bundle.targetBundle),
-                         forCellReuseIdentifier: typeString)
-            }
-        }
-    }
-    
-}
-
 public extension String {
     
     static func random(_ length: Int) -> String {
@@ -74,33 +57,6 @@ public extension Int {
     
     static func random(from: UInt32, to: UInt32) -> Int {
         return Int(from + arc4random_uniform(to - from))
-    }
-    
-}
-
-protocol UIViewLoading {}
-extension UIView : UIViewLoading {}
-
-extension UIViewLoading where Self : UIView {
-    
-    // note that this method returns an instance of type `Self`, rather than UIView
-    static func loadFromNib() -> Self {
-        let nibName = "\(self)".split{$0 == "."}.map(String.init).last!
-        let nib = UINib(nibName: nibName, bundle: Bundle.targetBundle)
-        return nib.instantiate(withOwner: self, options: nil).first as! Self
-    }
-    
-}
-
-extension Bundle {
-    
-    static var targetBundle: Bundle? {
-        var retBundle: Bundle?
-        let bundle = Bundle(for: self.classForCoder())
-        if let url = bundle.url(forResource: "Pod1", withExtension: "bundle") {
-            retBundle = Bundle(url: url)
-        }
-        return retBundle
     }
     
 }
