@@ -9,13 +9,22 @@
 import UIKit
 
 public class DPTagsViewModel {
-    
-    var languageEnglishName: String = "English"
-    var tagModels: [DPTagModel]?
-    
-    public init(tagModels: [DPTagModel], languageEnglishName: String = "English") {
-        self.tagModels = tagModels
-        self.languageEnglishName = languageEnglishName
-    }
-    
+
+  var languageEnglishName: String = "English"
+  var tagViewModels: [DPTagViewModel]?
+
+  public init(tagViewModels: [DPTagViewModel],
+              languageEnglishName: String = "English") {
+    self.tagViewModels = tagViewModels
+    self.languageEnglishName = languageEnglishName
+  }
+
+}
+
+extension DPTagsViewModel: Equatable {
+
+  public static func == (lhs: DPTagsViewModel, rhs: DPTagsViewModel) -> Bool {
+    return lhs.tagViewModels == rhs.tagViewModels
+  }
+
 }

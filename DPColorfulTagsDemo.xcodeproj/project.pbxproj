@@ -13,14 +13,15 @@
 		F79E364721D4BFCB00B3913F /* DPColorfulTags.h in Headers */ = {isa = PBXBuildFile; fileRef = F79E364521D4BFCB00B3913F /* DPColorfulTags.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F79E364A21D4BFCB00B3913F /* DPColorfulTags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79E364321D4BFCB00B3913F /* DPColorfulTags.framework */; };
 		F79E364B21D4BFCB00B3913F /* DPColorfulTags.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F79E364321D4BFCB00B3913F /* DPColorfulTags.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F79E365021D4C00700B3913F /* DPExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */; };
 		F79E365121D4C00700B3913F /* DPTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */; };
-		F79E365221D4C00700B3913F /* DPTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */; };
+		F79E365221D4C00700B3913F /* DPTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */; };
 		F79E365321D4C00700B3913F /* DPTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */; };
 		F79E365421D4C00700B3913F /* DPTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */; };
 		F79E365521D4C01100B3913F /* DPTagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79E363021D4813000B3913F /* DPTagView.xib */; };
 		F79E365621D4C01100B3913F /* DPTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */; };
-		F7B2C3281DFFFD8E00944199 /* DPExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */; };
+		F7D873442514E5F5008B04AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D873432514E5F5008B04AB /* Extensions.swift */; };
+		F7D8734F2514EA40008B04AB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8734E2514EA40008B04AB /* Presenter.swift */; };
+		F7D8735A2514FA8C008B04AB /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D873592514FA8C008B04AB /* ModuleBuilder.swift */; };
 		F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */; };
 		F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */; };
 		F7DEB1E81DEFF8B100FD3AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1E61DEFF8B100FD3AF8 /* Main.storyboard */; };
@@ -28,7 +29,7 @@
 		F7DEB1ED1DEFF8B100FD3AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1EB1DEFF8B100FD3AF8 /* LaunchScreen.storyboard */; };
 		F7DEB1F81DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1F71DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift */; };
 		F7DEB2031DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2021DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift */; };
-		F7DEB2181DEFF95400FD3AF8 /* DPTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */; };
+		F7DEB2181DEFF95400FD3AF8 /* DPTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */; };
 		F7DEB2191DEFF95400FD3AF8 /* DPTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */; };
 		F7DEB21A1DEFF95400FD3AF8 /* DPTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */; };
 		F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */; };
@@ -83,7 +84,9 @@
 		F79E364321D4BFCB00B3913F /* DPColorfulTags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPColorfulTags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79E364521D4BFCB00B3913F /* DPColorfulTags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPColorfulTags.h; sourceTree = "<group>"; };
 		F79E364621D4BFCB00B3913F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPExtentions.swift; sourceTree = "<group>"; };
+		F7D873432514E5F5008B04AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F7D8734E2514EA40008B04AB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		F7D873592514FA8C008B04AB /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		F7DEB1DF1DEFF8B100FD3AF8 /* DPColorfulTagsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPColorfulTagsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +99,7 @@
 		F7DEB1FE1DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPColorfulTagsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DEB2021DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPColorfulTagsDemoUITests.swift; sourceTree = "<group>"; };
 		F7DEB2041DEFF8B200FD3AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagModel.swift; sourceTree = "<group>"; };
+		F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagViewModel.swift; sourceTree = "<group>"; };
 		F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagsViewModel.swift; sourceTree = "<group>"; };
 		F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagTableViewCell.swift; sourceTree = "<group>"; };
 		F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagView.swift; sourceTree = "<group>"; };
@@ -179,8 +182,11 @@
 				F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */,
 				F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */,
 				F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */,
+				F7D8734E2514EA40008B04AB /* Presenter.swift */,
+				F7D873592514FA8C008B04AB /* ModuleBuilder.swift */,
 				F79E363A21D495E400B3913F /* DPAppLanguage.swift */,
 				F79E363B21D495E400B3913F /* DPLanguageManager.swift */,
+				F7D873432514E5F5008B04AB /* Extensions.swift */,
 				F7DEB1E61DEFF8B100FD3AF8 /* Main.storyboard */,
 				F7DEB1E91DEFF8B100FD3AF8 /* Assets.xcassets */,
 				F7DEB1EB1DEFF8B100FD3AF8 /* LaunchScreen.storyboard */,
@@ -212,9 +218,8 @@
 		F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */ = {
 			isa = PBXGroup;
 			children = (
-				F7B2C3271DFFFD8E00944199 /* DPExtentions.swift */,
 				F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */,
-				F7DEB2121DEFF95400FD3AF8 /* DPTagModel.swift */,
+				F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */,
 				F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */,
 				F79E363021D4813000B3913F /* DPTagView.xib */,
 				F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */,
@@ -317,7 +322,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Hongli Yu";
 				TargetAttributes = {
 					F79E364221D4BFCB00B3913F = {
@@ -350,10 +355,9 @@
 			};
 			buildConfigurationList = F7DEB1DA1DEFF8B100FD3AF8 /* Build configuration list for PBXProject "DPColorfulTagsDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				de,
@@ -417,9 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79E365021D4C00700B3913F /* DPExtentions.swift in Sources */,
 				F79E365121D4C00700B3913F /* DPTagsViewModel.swift in Sources */,
-				F79E365221D4C00700B3913F /* DPTagModel.swift in Sources */,
+				F79E365221D4C00700B3913F /* DPTagViewModel.swift in Sources */,
 				F79E365321D4C00700B3913F /* DPTagView.swift in Sources */,
 				F79E365421D4C00700B3913F /* DPTagTableViewCell.swift in Sources */,
 			);
@@ -433,10 +436,12 @@
 				F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */,
 				F7DEB2191DEFF95400FD3AF8 /* DPTagsViewModel.swift in Sources */,
 				F79E363D21D495E500B3913F /* DPLanguageManager.swift in Sources */,
-				F7DEB2181DEFF95400FD3AF8 /* DPTagModel.swift in Sources */,
-				F7B2C3281DFFFD8E00944199 /* DPExtentions.swift in Sources */,
+				F7D8735A2514FA8C008B04AB /* ModuleBuilder.swift in Sources */,
+				F7D8734F2514EA40008B04AB /* Presenter.swift in Sources */,
+				F7DEB2181DEFF95400FD3AF8 /* DPTagViewModel.swift in Sources */,
 				F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */,
 				F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */,
+				F7D873442514E5F5008B04AB /* Extensions.swift in Sources */,
 				F79E363C21D495E500B3913F /* DPAppLanguage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,7 +540,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = DPColorfulTags/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -567,7 +572,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = DPColorfulTags/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = hongliyu.github.io.DPColorfulTags;
@@ -605,6 +610,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -630,7 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -665,6 +671,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -684,7 +691,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -701,7 +708,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FC9QT6TC28;
 				INFOPLIST_FILE = DPColorfulTagsDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,7 +724,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FC9QT6TC28;
 				INFOPLIST_FILE = DPColorfulTagsDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hlyu.DPColorfulTagsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

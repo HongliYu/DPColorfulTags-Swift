@@ -18,7 +18,7 @@ final class DPLanguageManager {
   private func setCurrentLanguage(_ language: DPAppLanguage) {
     currentLanguage = language
     setLanguageInApp(currentLanguage.code)
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "languageDidChange"), object: nil)
+    NotificationCenter.default.post(name: DPNotification.languageDidChange, object: nil)
   }
   
   public func setCurrentLanguage(_ englishName: String) {
@@ -41,7 +41,7 @@ final class DPLanguageManager {
   
   init() {
     if let currentLanguageCodes = UserDefaults.standard.object(forKey: kCurrentLanguageKey) as? [String],
-      let currentLanguageCode = currentLanguageCodes.first {
+       let currentLanguageCode = currentLanguageCodes.first {
       currentLanguage = DPAppLanguage(code: currentLanguageCode)
       return
     }
@@ -60,8 +60,12 @@ final class DPLanguageManager {
     UserDefaults.standard.set([code], forKey: "AppleLanguages")
     UserDefaults.standard.synchronize()
     guard let bundlePath = Bundle.main.path(forResource: code, ofType: "lproj"),
-      let bundle =  Bundle(path: bundlePath) else { return }
+          let bundle =  Bundle(path: bundlePath) else { return }
     currentBundle = bundle
   }
   
+}
+
+struct DPNotification {
+  static let languageDidChange = NSNotification.Name(rawValue: "languageDidChange")
 }
