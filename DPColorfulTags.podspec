@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DPColorfulTags"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "colorful tags"
 
   s.description  = <<-DESC
@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "HongliYu" => "yhlssdone@gmail.com" }
   s.source       = { :git => "https://github.com/HongliYu/DPColorfulTags-Swift.git", :tag => "#{s.version}" }
-  s.source_files = "DPColorfulTagsDemo/DPColorfulTags/*.{swift}"
-  s.resources = ['DPColorfulTagsDemo/DPColorfulTags/*.{xib}', 'DPColorfulTagsDemo/*.{xcassets}']
-  s.platform     = :ios, "10.0"
+  s.source_files = "Sources/DPColorfulTags-Swift/*.{swift}"
+  s.resources = ['Sources/DPColorfulTags-Swift/*.{xib}']
+  s.platform     = :ios, "12.0"
   s.requires_arc = true
   s.frameworks   = 'UIKit'
   s.module_name  = 'DPColorfulTags'

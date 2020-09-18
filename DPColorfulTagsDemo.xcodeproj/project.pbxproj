@@ -7,21 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F79E363121D4813000B3913F /* DPTagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79E363021D4813000B3913F /* DPTagView.xib */; };
 		F79E363C21D495E500B3913F /* DPAppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79E363A21D495E400B3913F /* DPAppLanguage.swift */; };
 		F79E363D21D495E500B3913F /* DPLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79E363B21D495E400B3913F /* DPLanguageManager.swift */; };
 		F79E364721D4BFCB00B3913F /* DPColorfulTags.h in Headers */ = {isa = PBXBuildFile; fileRef = F79E364521D4BFCB00B3913F /* DPColorfulTags.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F79E364A21D4BFCB00B3913F /* DPColorfulTags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79E364321D4BFCB00B3913F /* DPColorfulTags.framework */; };
 		F79E364B21D4BFCB00B3913F /* DPColorfulTags.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F79E364321D4BFCB00B3913F /* DPColorfulTags.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F79E365121D4C00700B3913F /* DPTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */; };
-		F79E365221D4C00700B3913F /* DPTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */; };
-		F79E365321D4C00700B3913F /* DPTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */; };
-		F79E365421D4C00700B3913F /* DPTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */; };
-		F79E365521D4C01100B3913F /* DPTagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79E363021D4813000B3913F /* DPTagView.xib */; };
-		F79E365621D4C01100B3913F /* DPTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */; };
 		F7D873442514E5F5008B04AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D873432514E5F5008B04AB /* Extensions.swift */; };
 		F7D8734F2514EA40008B04AB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8734E2514EA40008B04AB /* Presenter.swift */; };
 		F7D8735A2514FA8C008B04AB /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D873592514FA8C008B04AB /* ModuleBuilder.swift */; };
+		F7D8736B251511B0008B04AB /* DPTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D87365251511B0008B04AB /* DPTagTableViewCell.xib */; };
+		F7D8736C251511B0008B04AB /* DPTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D87366251511B0008B04AB /* DPTagView.swift */; };
+		F7D8736D251511B0008B04AB /* DPTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D87367251511B0008B04AB /* DPTagTableViewCell.swift */; };
+		F7D8736E251511B0008B04AB /* DPTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D87368251511B0008B04AB /* DPTagViewModel.swift */; };
+		F7D8736F251511B0008B04AB /* DPTagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D87369251511B0008B04AB /* DPTagView.xib */; };
+		F7D87370251511B0008B04AB /* DPTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8736A251511B0008B04AB /* DPTagsViewModel.swift */; };
 		F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */; };
 		F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */; };
 		F7DEB1E81DEFF8B100FD3AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1E61DEFF8B100FD3AF8 /* Main.storyboard */; };
@@ -29,11 +28,6 @@
 		F7DEB1ED1DEFF8B100FD3AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB1EB1DEFF8B100FD3AF8 /* LaunchScreen.storyboard */; };
 		F7DEB1F81DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB1F71DEFF8B200FD3AF8 /* DPColorfulTagsDemoTests.swift */; };
 		F7DEB2031DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2021DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift */; };
-		F7DEB2181DEFF95400FD3AF8 /* DPTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */; };
-		F7DEB2191DEFF95400FD3AF8 /* DPTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */; };
-		F7DEB21A1DEFF95400FD3AF8 /* DPTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */; };
-		F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */; };
-		F7DEB21C1DEFF95400FD3AF8 /* DPTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */; };
 		F7F5E3CA1FB7341800636DF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7F5E3CC1FB7341800636DF4 /* InfoPlist.strings */; };
 		F7F5E3D01FB7349100636DF4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7F5E3D21FB7349100636DF4 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -78,7 +72,6 @@
 
 /* Begin PBXFileReference section */
 		F707F97C21D3304200410825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F79E363021D4813000B3913F /* DPTagView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPTagView.xib; sourceTree = "<group>"; };
 		F79E363A21D495E400B3913F /* DPAppLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPAppLanguage.swift; sourceTree = "<group>"; };
 		F79E363B21D495E400B3913F /* DPLanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPLanguageManager.swift; sourceTree = "<group>"; };
 		F79E364321D4BFCB00B3913F /* DPColorfulTags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPColorfulTags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +80,12 @@
 		F7D873432514E5F5008B04AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F7D8734E2514EA40008B04AB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		F7D873592514FA8C008B04AB /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		F7D87365251511B0008B04AB /* DPTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTagTableViewCell.xib; sourceTree = "<group>"; };
+		F7D87366251511B0008B04AB /* DPTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagView.swift; sourceTree = "<group>"; };
+		F7D87367251511B0008B04AB /* DPTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagTableViewCell.swift; sourceTree = "<group>"; };
+		F7D87368251511B0008B04AB /* DPTagViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagViewModel.swift; sourceTree = "<group>"; };
+		F7D87369251511B0008B04AB /* DPTagView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTagView.xib; sourceTree = "<group>"; };
+		F7D8736A251511B0008B04AB /* DPTagsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagsViewModel.swift; sourceTree = "<group>"; };
 		F7DEB1DF1DEFF8B100FD3AF8 /* DPColorfulTagsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPColorfulTagsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,11 +98,6 @@
 		F7DEB1FE1DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPColorfulTagsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DEB2021DEFF8B200FD3AF8 /* DPColorfulTagsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPColorfulTagsDemoUITests.swift; sourceTree = "<group>"; };
 		F7DEB2041DEFF8B200FD3AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagViewModel.swift; sourceTree = "<group>"; };
-		F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagsViewModel.swift; sourceTree = "<group>"; };
-		F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagTableViewCell.swift; sourceTree = "<group>"; };
-		F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPTagView.swift; sourceTree = "<group>"; };
-		F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTagTableViewCell.xib; sourceTree = "<group>"; };
 		F7F5E3CB1FB7341800636DF4 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7F5E3CD1FB7342800636DF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7F5E3D11FB7349100636DF4 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -154,6 +148,20 @@
 			path = DPColorfulTags;
 			sourceTree = "<group>";
 		};
+		F7D87364251511B0008B04AB /* DPColorfulTags-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F7D8736A251511B0008B04AB /* DPTagsViewModel.swift */,
+				F7D87368251511B0008B04AB /* DPTagViewModel.swift */,
+				F7D87366251511B0008B04AB /* DPTagView.swift */,
+				F7D87369251511B0008B04AB /* DPTagView.xib */,
+				F7D87367251511B0008B04AB /* DPTagTableViewCell.swift */,
+				F7D87365251511B0008B04AB /* DPTagTableViewCell.xib */,
+			);
+			name = "DPColorfulTags-Swift";
+			path = "Sources/DPColorfulTags-Swift";
+			sourceTree = SOURCE_ROOT;
+		};
 		F7DEB1D61DEFF8B100FD3AF8 = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +187,7 @@
 		F7DEB1E11DEFF8B100FD3AF8 /* DPColorfulTagsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */,
+				F7D87364251511B0008B04AB /* DPColorfulTags-Swift */,
 				F7DEB1E21DEFF8B100FD3AF8 /* AppDelegate.swift */,
 				F7DEB1E41DEFF8B100FD3AF8 /* ViewController.swift */,
 				F7D8734E2514EA40008B04AB /* Presenter.swift */,
@@ -213,19 +221,6 @@
 				F7DEB2041DEFF8B200FD3AF8 /* Info.plist */,
 			);
 			path = DPColorfulTagsDemoUITests;
-			sourceTree = "<group>";
-		};
-		F7DEB2101DEFF93700FD3AF8 /* DPColorfulTags */ = {
-			isa = PBXGroup;
-			children = (
-				F7DEB2131DEFF95400FD3AF8 /* DPTagsViewModel.swift */,
-				F7DEB2121DEFF95400FD3AF8 /* DPTagViewModel.swift */,
-				F7DEB2151DEFF95400FD3AF8 /* DPTagView.swift */,
-				F79E363021D4813000B3913F /* DPTagView.xib */,
-				F7DEB2141DEFF95400FD3AF8 /* DPTagTableViewCell.swift */,
-				F7DEB2161DEFF95400FD3AF8 /* DPTagTableViewCell.xib */,
-			);
-			path = DPColorfulTags;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,8 +376,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79E365521D4C01100B3913F /* DPTagView.xib in Resources */,
-				F79E365621D4C01100B3913F /* DPTagTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,9 +386,9 @@
 				F7DEB1ED1DEFF8B100FD3AF8 /* LaunchScreen.storyboard in Resources */,
 				F7F5E3D01FB7349100636DF4 /* Localizable.strings in Resources */,
 				F7DEB1EA1DEFF8B100FD3AF8 /* Assets.xcassets in Resources */,
-				F7DEB21C1DEFF95400FD3AF8 /* DPTagTableViewCell.xib in Resources */,
-				F79E363121D4813000B3913F /* DPTagView.xib in Resources */,
 				F7DEB1E81DEFF8B100FD3AF8 /* Main.storyboard in Resources */,
+				F7D8736F251511B0008B04AB /* DPTagView.xib in Resources */,
+				F7D8736B251511B0008B04AB /* DPTagTableViewCell.xib in Resources */,
 				F7F5E3CA1FB7341800636DF4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,10 +414,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79E365121D4C00700B3913F /* DPTagsViewModel.swift in Sources */,
-				F79E365221D4C00700B3913F /* DPTagViewModel.swift in Sources */,
-				F79E365321D4C00700B3913F /* DPTagView.swift in Sources */,
-				F79E365421D4C00700B3913F /* DPTagTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,15 +421,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DEB21A1DEFF95400FD3AF8 /* DPTagTableViewCell.swift in Sources */,
-				F7DEB21B1DEFF95400FD3AF8 /* DPTagView.swift in Sources */,
-				F7DEB2191DEFF95400FD3AF8 /* DPTagsViewModel.swift in Sources */,
 				F79E363D21D495E500B3913F /* DPLanguageManager.swift in Sources */,
 				F7D8735A2514FA8C008B04AB /* ModuleBuilder.swift in Sources */,
 				F7D8734F2514EA40008B04AB /* Presenter.swift in Sources */,
-				F7DEB2181DEFF95400FD3AF8 /* DPTagViewModel.swift in Sources */,
+				F7D8736E251511B0008B04AB /* DPTagViewModel.swift in Sources */,
+				F7D8736D251511B0008B04AB /* DPTagTableViewCell.swift in Sources */,
 				F7DEB1E51DEFF8B100FD3AF8 /* ViewController.swift in Sources */,
 				F7DEB1E31DEFF8B100FD3AF8 /* AppDelegate.swift in Sources */,
+				F7D87370251511B0008B04AB /* DPTagsViewModel.swift in Sources */,
+				F7D8736C251511B0008B04AB /* DPTagView.swift in Sources */,
 				F7D873442514E5F5008B04AB /* Extensions.swift in Sources */,
 				F79E363C21D495E500B3913F /* DPAppLanguage.swift in Sources */,
 			);
@@ -703,7 +692,6 @@
 		F7DEB2081DEFF8B200FD3AF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FC9QT6TC28;
@@ -719,7 +707,6 @@
 		F7DEB2091DEFF8B200FD3AF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FC9QT6TC28;
